@@ -23,5 +23,4 @@ export const homeWorkReducer = (state: PeopleType [], action: ActionType): Peopl
 
 
 export const sortNameUp = () => ({type: 'sort', payload: 'up'} as const)
-export const sortNameDown = () => ({type: 'sort', payload: 'down'} as const)
 export const sortChekAge = () => ({type: 'check', payload: Number} as const)

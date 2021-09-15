@@ -6,6 +6,7 @@ function HW11() {
     const [value1, setValue1] = useState(0)
     const [value2, setValue2] = useState(100)
 
+
     return (
         <div>
             <hr/>
@@ -16,6 +17,7 @@ function HW11() {
                 <span>{value1}</span>
                 <SuperRange
                     // сделать так чтоб value1 изменялось
+
                 />
             </div>
 
