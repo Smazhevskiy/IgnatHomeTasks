@@ -1,30 +1,33 @@
 import React from 'react'
-import Message from "./Message";
+import Message from './Message';
 
-
-export type TypeMessageData = {
-    avatar: string
-    name: string
-    message: string
-    time: string
-}
-
-export const messageData: TypeMessageData = {
-    avatar: 'https://images.chesscomfiles.com/uploads/v1/user/75372640.5116a1ac.1200x1200o.526a857d8258.png',
-    name: 'Atrem',
-    message: 'npm nazhmimal а если найду бла бал бауваувацулдаоуцал аоулаоудлаоу ауолаоудшл?',
-    time: '22:02',
+const messageData = {
+    avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
+    name: 'Some Name',
+    message: 'some text',
+    time: '22:00',
 }
 
 function HW1() {
     return (
         <div>
+            <hr/>
+            homeworks 1
+            <hr/>
+
+            {/*should work (должно работать)*/}
+
             <Message
                 avatar={messageData.avatar}
                 name={messageData.name}
                 message={messageData.message}
                 time={messageData.time}
             />
+
+            <hr/>
+            {/*для личного творчества, могу проверить*/}
+            {/*<AlternativeMessage/>*/}
+            <hr/>
         </div>
     )
 }
